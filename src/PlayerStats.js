@@ -8,7 +8,7 @@ const PlayerStats = (props) => {
             <div className="player-stats-detailed">
                 
                 {props.abilities.map((ability)=>( 
-                    <div className="player-stats-column">
+                    <div key={ability.title} className="player-stats-column">
                         <Column ability = {ability}/>
                     </div>
                 ))}  

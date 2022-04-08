@@ -12,7 +12,7 @@ const Column = (props) => {
             </div>
             <div className="stats">
                     {props.ability.stats.map((stat) => (
-                        <div>
+                        <div key={stat.name}>
                             <div className="stats-text">
                                 {stat.name}
                             </div>
