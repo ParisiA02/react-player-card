@@ -12,7 +12,6 @@ const PlayerStats = (props) => {
                         <Column ability = {ability}/>
                     </div>
                 ))}  
-                
             </div>
 
         </div>
