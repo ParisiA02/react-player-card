@@ -7,7 +7,7 @@ const Column = (props) => {
             <div className="half-circle">
                 
             </div>
-            <div className="number">
+            <div className="number" style={{color:`${props.ability.overall <= 50 ? "red" : props.ability.overall<=70 ? "yellow" : "green"}`}}>
                 {props.ability.overall}
             </div>
             <div className="stats">
@@ -19,7 +19,9 @@ const Column = (props) => {
                             <div className="stats-number">
                                 {stat.value}
                             </div>
-                            <div className="stats-bar stats-bar-91">
+                            <div className="stats-bar" style={{background:`${(stat.value <= 50 && `linear-gradient(90deg, red ${stat.value}%, grey ${stat.value}%)` ) || 
+                                                                             ((stat.value > 50 && stat.value < 70)  && `linear-gradient(90deg, yellow ${stat.value}%, grey ${stat.value}%)`) || 
+                                                                             (stat.value > 70 && `linear-gradient(90deg, #1CAA16 ${stat.value}%, grey ${stat.value}%)`)}`}}>
                             </div>
                         </div>
                     ))}

@@ -105,10 +105,7 @@
     border-radius: 5px;
     background-color: grey;
     margin: 3px auto 10px;
-}
-
-.stats-bar-91 {
-    background: linear-gradient(90deg, #1CAA16 91%, grey 0%);
+    background: linear-gradient(90deg, #1CAA16 91%, grey) 0%;
 }
 
 
